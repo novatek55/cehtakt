@@ -1,0 +1,25 @@
+# Основные зависимости proplancloud (backend)
+asgiref==3.11.1
+Django==6.0.6
+django-cors-headers==4.9.0
+djangorestframework==3.17.1
+et_xmlfile==2.0.0
+openpyxl==3.1.5
+sqlparse==0.5.5
+tzdata==2026.2
+
+# Прод-сервер
+gunicorn==23.0.0
+whitenoise==6.8.2
+
+# Драйвер MySQL/MariaDB — PyMySQL (чистый Python, без компиляции; шим в config/__init__.py).
+# Нужен только на сервере (DB_ENGINE=mysql); локально (sqlite) не импортируется.
+PyMySQL==1.1.1
+
+# Сборка PDF с этикетками Wildberries (стикеры приходят по одному картинками).
+# Ozon отдаёт готовый PDF на пачку отправлений, ему это не нужно.
+# fonttools и defusedxml — зависимости fpdf2, закреплены явно как остальной список.
+fpdf2==2.8.7
+pillow==12.3.0
+fonttools==4.63.0
+defusedxml==0.7.1

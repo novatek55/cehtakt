@@ -1,0 +1,38 @@
+a[href="/zakup/PLAN/shipments"],
+a[href="/zakup/PLAN/settings/integrations"] {
+    display: none !important;
+}
+
+.cehtakt-support {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    color: #1d4fd7;
+    font-size: 14px;
+    font-weight: 600;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+}
+.cehtakt-support:focus-visible {
+    outline: 2px solid #3949ab;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+.cehtakt-support-login {
+    display: flex;
+    margin-top: 8px;
+}
+.cehtakt-support-icon {
+    display: none;
+}
+@media (max-width: 899px) {
+    .cehtakt-support-toolbar .cehtakt-support-label {
+        display: none;
+    }
+    .cehtakt-support-toolbar .cehtakt-support-icon {
+        display: inline;
+        font-size: 22px;
+    }
+}
